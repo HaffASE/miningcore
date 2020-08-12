@@ -79,7 +79,7 @@ namespace Miningcore.Blockchain.Ethereum
         private const int BlockSearchOffset = 50;
         private EthereumPoolConfigExtra extraPoolConfig;
         private EthereumPoolPaymentProcessingConfigExtra extraConfig;
-        private bool isParity = true;
+        private bool isParity = false;
 
         protected override string LogCategory => "Ethereum Payout Handler";
 

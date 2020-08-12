@@ -154,13 +154,13 @@ namespace Miningcore.Blockchain.Ethereum
                         // additional check
                         // NOTE: removal of first character of both sealfields caused by
                         // https://github.com/paritytech/parity/issues/1090
-                        var match = isParity ?
-                            true :
-                            blockInfo.SealFields[0].Substring(2) == mixHash &&
-                            blockInfo.SealFields[1].Substring(2) == nonce;
+                        // var match = isParity ?
+                        //     true :
+                        //     blockInfo.SealFields[0].Substring(2) == mixHash &&
+                        //     blockInfo.SealFields[1].Substring(2) == nonce;
 
                         // mature?
-                        if(match && (latestBlockHeight - block.BlockHeight >= EthereumConstants.MinConfimations))
+                        if((latestBlockHeight - block.BlockHeight >= EthereumConstants.MinConfimations))
                         {
                             block.Status = BlockStatus.Confirmed;
                             block.ConfirmationProgress = 1;

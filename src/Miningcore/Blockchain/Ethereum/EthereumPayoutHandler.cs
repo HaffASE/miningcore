@@ -237,7 +237,7 @@ namespace Miningcore.Blockchain.Ethereum
                         }
                     }
 
-                    if(block.Status == BlockStatus.Pending && block.ConfirmationProgress > 0.75)
+                    if(block.Status == BlockStatus.Pending && block.ConfirmationProgress > 1**)
                     {
                         // we've lost this one
                         block.Status = BlockStatus.Orphaned;

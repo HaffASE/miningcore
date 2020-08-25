@@ -16,7 +16,7 @@ namespace Miningcore.Blockchain.Ethereum
         public const decimal Wei = 1000000000000000000;
         public static BigInteger WeiBig = new BigInteger(1000000000000000000);
         public const string EthereumStratumVersion = "EthereumStratum/1.0.0";
-        public const decimal StaticTransactionFeeReserve = 0.0025m; // in ETH
+        public const decimal StaticTransactionFeeReserve = 0m; // in ETH
         public const string BlockTypeUncle = "uncle";
 
 #if !DEBUG
@@ -40,7 +40,7 @@ namespace Miningcore.Blockchain.Ethereum
         public const decimal ExpanseBlockReward = 8.0m;
         public const decimal EllaismBlockReward = 5.0m;
 
-        public const int MinConfimations = 16;
+        public const int MinConfimations = 30;
     }
 
     public class EthereumClassicConstants
